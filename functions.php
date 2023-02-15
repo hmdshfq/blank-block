@@ -7,16 +7,6 @@
  * @since blank_block 1.0
  */
 
-/**
- * First, let's set the maximum content width based on the theme's
- * design and stylesheet.
- * This will limit the width of all uploaded images and embeds.
- */
-if (!isset($content_width)) {
-    $content_width = 800; /* pixels */
-}
-
-
 if (!function_exists('blank_block_setup')) :
 
     /**
@@ -60,5 +50,15 @@ if (!function_exists('blank_block_setup')) :
          */
         add_theme_support('post-formats', array('aside', 'gallery', 'quote', 'image', 'video'));
     }
+    add_action('after_setup_theme', 'blank_block_setup');;
+
+    /**
+     * Load scripts and styles
+     */
+    function blank_block_styles()
+    {
+        wp_enqueue_style('blank_block_style', get_stylesheet_uri(), array(), wp_get_theme()->get('Version'));
+        wp_enqueue_style('blank_block_main', get_template_directory_uri() . '/build/css/main.css', array(), wp_get_theme()->get('Version'));
+    }
+    add_action('wp_enqueue_scripts', 'blank_block_styles');
 endif; // blank_block_setup
-add_action('after_setup_theme', 'blank_block_setup');;
