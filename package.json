@@ -1,0 +1,17 @@
+{
+  "name": "blank-block",
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "theme-json": "node --watch ./assets/theme-json/default/compile.js",
+    "dev": "concurrently \"gulp\" \"pnpm run theme-json\""
+  },
+  "dependencies": {
+    "concurrently": "^7.6.0",
+    "del": "^7.0.0",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.58.1"
+  }
+}
