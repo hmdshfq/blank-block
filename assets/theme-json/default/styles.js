@@ -1,17 +1,10 @@
 export default {
     typography: {
         fontSize: 'var(--wp--preset--font-size--base)',
+        fontFamily: 'var(--var(--wp--preset--font-family--sans-serif))'
     },
     elements: {
         h1: {
-            typography: {
-                fontSize: 'var(--wp--preset--font-size--7-xl)',
-                fontFamily: 'var(--wp--preset--font-family--sans-serif)',
-                fontWeight: '700',
-                lineHeight: 'var(--wp--custom--typography--line-height--tight)',
-            },
-        },
-        h2: {
             typography: {
                 fontSize: 'var(--wp--preset--font-size--6-xl)',
                 fontFamily: 'var(--wp--preset--font-family--sans-serif)',
@@ -19,9 +12,17 @@ export default {
                 lineHeight: 'var(--wp--custom--typography--line-height--tight)',
             },
         },
-        h3: {
+        h2: {
             typography: {
                 fontSize: 'var(--wp--preset--font-size--5-xl)',
+                fontFamily: 'var(--wp--preset--font-family--sans-serif)',
+                fontWeight: '700',
+                lineHeight: 'var(--wp--custom--typography--line-height--tight)',
+            },
+        },
+        h3: {
+            typography: {
+                fontSize: 'var(--wp--preset--font-size--4-xl)',
                 fontFamily: 'var(--wp--preset--font-family--sans-serif)',
                 fontWeight: '300',
                 lineHeight: 'var(--wp--custom--typography--line-height--tight)',
@@ -29,7 +30,7 @@ export default {
         },
         h4: {
             typography: {
-                fontSize: 'var(--wp--preset--font-size--4-xl)',
+                fontSize: 'var(--wp--preset--font-size--3-xl)',
                 fontFamily: 'var(--wp--preset--font-family--serif)',
                 fontWeight: '700',
                 lineHeight: 'var(--wp--custom--typography--line-height--snug)',
@@ -37,7 +38,7 @@ export default {
         },
         h5: {
             typography: {
-                fontSize: 'var(--wp--preset--font-size--3-xl)',
+                fontSize: 'var(--wp--preset--font-size--2-xl)',
                 fontFamily: 'var(--wp--preset--font-family--serif)',
                 fontWeight: '700',
                 lineHeight: 'var(--wp--custom--typography--line-height--snug)',
@@ -45,7 +46,7 @@ export default {
         },
         h6: {
             typography: {
-                fontSize: 'var(--wp--preset--font-size--2-xl)',
+                fontSize: 'var(--wp--preset--font-size--1-xl)',
                 fontFamily: 'var(--wp--preset--font-family--sans-serif)',
                 fontWeight: '300',
                 lineHeight: 'var(--wp--custom--typography--line-height--normal)',
@@ -69,5 +70,15 @@ export default {
                 background: 'var(--wp--preset--color--primary)',
             },
         },
+        'core/post-content': {
+            typography: {
+                fontFamily: 'var(--wp--preset--font-family--sans-serif)'
+            }
+        },
+        'core/site-title': {
+            typography: {
+                fontSize: 'var(--wp--preset--font-size--3-xl)'
+            }
+        }
     },
 };

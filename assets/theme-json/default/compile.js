@@ -9,6 +9,6 @@ var theme = {
     styles
 }
 
-var json = JSON.stringify(theme);
+var json = JSON.stringify(theme, null, 4);
 
 fs.writeFileSync('theme.json', json);

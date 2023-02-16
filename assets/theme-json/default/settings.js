@@ -1,4 +1,5 @@
 export default {
+    "appearanceTools": true,
     "layout": {
         "contentSize": "840px",
         "wideSize": "1100px"
@@ -6,6 +7,7 @@ export default {
     color: {
         custom: false,
         customGradient: false,
+        defaultPalette: false,
         palette: [
             {
                 slug: 'primary',
@@ -152,7 +154,6 @@ export default {
             typography: {
                 fontSizes: [],
                 fontFamilies: [],
-                letterCase: false,
                 letterSpacing: false,
             },
         },
